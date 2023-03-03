@@ -4,7 +4,7 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(101,87,87);
+  background-color: #111;
 }
 
 *,
@@ -22,5 +22,9 @@ button{
 }
 .test{
   width: 100%;
-  height: 200vh;
+  // height: 200vh;
+  height: 50vh;
+}
+.avatar{
+  width: 30px;
 }

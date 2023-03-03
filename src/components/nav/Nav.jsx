@@ -1,4 +1,11 @@
+//npm i material-ui/icons ensuite npm i @material-ui/core pour telecharger les icones
+
 import React, { useEffect, useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+
 import "./Nav.scss";
 
 const Nav = () => {
@@ -28,9 +35,9 @@ const Nav = () => {
       } ${toogleMenu && "show"} `}
     >
       <button className="nav__burger" onClick={handleClick}>
-        ---
+        <MenuIcon />
       </button>
-      <img src="./images/logo.png" className="nav__logo" alt="Netflix" />
+      <img src="./images/netflix1.png" className="nav__logo" alt="Netflix" />
       <div className="nav__links">
         <a href="/" className="nav__link">
           Accueil
@@ -44,19 +51,23 @@ const Nav = () => {
       </div>
       <div className="nav__actions">
         <a href="/" className="nav__action">
-          Search
+          <SearchIcon />
         </a>
         <a href="/" className="nav__action">
           DIRECT
         </a>
         <a href="/" className="nav__action">
-          Gitf
+          <CardGiftcardIcon />
         </a>
         <a href="/" className="nav__action">
-          Notif
+          <NotificationsNoneIcon />
         </a>
         <a href="/" className="nav__action">
-          <img src="./images/grey_star.png" alt="Avatar" />
+          <img
+            src="./images/Netflix-avatar.png"
+            className="avatar"
+            alt="Avatar"
+          />
         </a>
       </div>
     </div>
