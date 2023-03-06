@@ -1,0 +1,113 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  padding: 12px 4%;
+  font-size: 0.9rem;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(74, 74, 74, 0.6)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(74, 74, 74, 0.6), rgba(0, 0, 0, 0));
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav--black {
+  background-color: #000;
+}
+
+.nav__burger {
+  cursor: pointer;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__burger {
+    display: none;
+  }
+}
+
+.nav__logo {
+  width: 100px;
+}
+
+.nav__links {
+  margin-left: 20px;
+  -webkit-transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
+}
+
+.nav__links .nav__link {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__links {
+    margin-left: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 110%;
+    right: 0;
+  }
+  .show .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 60px);
+    top: 60px;
+    background-color: #000;
+    visibility: visible;
+  }
+  .nav__links .nav__link {
+    padding: 15px -4%;
+    font-size: 1.5rem;
+  }
+}
+
+.nav__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav__actions .nav__action {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__actions .nav__action {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */
