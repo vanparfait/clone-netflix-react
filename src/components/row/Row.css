@@ -1,0 +1,26 @@
+.row {
+  padding: 1rem 4%;
+  color: #fff;
+}
+
+.row__title {
+  font-size: 1.7rem;
+}
+
+.row__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: visible;
+  overflow-x: hidden;
+  width: 100%;
+  padding: .5rem 0;
+}
+
+.row__images .row__image {
+  border-radius: 15px;
+}
+/*# sourceMappingURL=Row.css.map */

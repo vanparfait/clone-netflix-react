@@ -19,6 +19,7 @@
   background: linear-gradient(to bottom, rgba(74, 74, 74, 0.6), rgba(0, 0, 0, 0));
   -webkit-transition: background-color .3s ease-in-out;
   transition: background-color .3s ease-in-out;
+  z-index: 1;
 }
 
 .nav a {
