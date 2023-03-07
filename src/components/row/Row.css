@@ -5,6 +5,7 @@
 
 .row__title {
   font-size: 1.7rem;
+  padding: 0 0.8rem;
 }
 
 .row__images {
@@ -15,12 +16,23 @@
       -ms-flex-align: center;
           align-items: center;
   overflow-x: visible;
-  overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
   padding: .5rem 0;
 }
 
 .row__images .row__image {
-  border-radius: 15px;
+  width: 300px;
+  padding: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.row__images .row__image:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=Row.css.map */

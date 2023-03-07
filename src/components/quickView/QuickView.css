@@ -1,0 +1,32 @@
+.quickView {
+  position: fixed;
+  z-index: 2;
+  background-color: #111;
+  border-radius: 10px;
+  height: calc(100vh - 40px);
+  top: 40px;
+  overflow: scroll;
+  display: none;
+}
+
+.quickView.open {
+  display: block;
+}
+
+.quickView__banner {
+  padding-top: 50vh;
+  height: 50vh;
+}
+
+.quickView__content {
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.quickView__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+}
+/*# sourceMappingURL=QuickView.css.map */

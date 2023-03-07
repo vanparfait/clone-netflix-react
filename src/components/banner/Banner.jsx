@@ -4,9 +4,15 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import axios from "axios";
 import requests from "../../config/Request.js";
+import QuickView from "../quickView/QuickView";
 
 const Banner = () => {
   const [movie, setMovie] = useState([]);
+  const [popup, setPopup] = useState(false);
+
+  function handlePopup() {
+    setPopup(!popup);
+  }
 
   useEffect(() => {
     async function fetchData() {
@@ -46,12 +52,19 @@ const Banner = () => {
             <PlayArrowIcon />
             Lecture
           </button>
-          <button className="banner__button">
+          <button className="banner__button" onClick={handlePopup}>
             <HelpCenterIcon />
             Plus D'infos
           </button>
         </div>
       </div>
+      <QuickView
+        bannerStyle={bannerStyle}
+        movie={movie}
+        handlePopup={handlePopup}
+        popupStatut={popup}
+        truncateText={truncateText}
+      />
     </header>
   );
 };
