@@ -5,6 +5,7 @@ import HelpCenterIcon from "@mui/icons-material/HelpCenter";
 import axios from "axios";
 import requests from "../../config/Request.js";
 import QuickView from "../quickView/QuickView";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const [movie, setMovie] = useState([]);
@@ -48,10 +49,12 @@ const Banner = () => {
           {truncateText(movie?.overview, 100)}
         </p>
         <div className="banner__buttons">
-          <button className="banner__button banner__button--play">
-            <PlayArrowIcon />
-            Lecture
-          </button>
+          <Link to={`/video/${movie?.id}`}>
+            <button className="banner__button banner__button--play">
+              <PlayArrowIcon />
+              Lecture
+            </button>
+          </Link>
           <button className="banner__button" onClick={handlePopup}>
             <HelpCenterIcon />
             Plus D'infos
